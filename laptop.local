@@ -1,0 +1,5 @@
+#!/bin/sh
+
+brew install vim --with-python3 --without-python
+brew cask install spotify
+brew cask install rectangle
