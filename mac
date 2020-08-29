@@ -84,8 +84,7 @@ esac
 
 if ! command -v brew >/dev/null; then
   fancy_echo "Installing Homebrew ..."
-    curl -fsS \
-      'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
     append_to_zshrc '# recommended by brew doctor'
 
@@ -141,7 +140,14 @@ brew "postgres", restart_service: :changed
 brew "redis", restart_service: :changed
 
 # Software
-brew install mas
+brew "mas"
+
+EOF
+
+brew cask install dropbox
+brew cask install google-chrome
+brew cask install visual-studio-code
+brew cask install iterm2
 
 # Things
 mas install 904280696
@@ -151,12 +157,6 @@ mas install 497799835
 
 # Slac
 mas install 803453959
-EOF
-
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install visual-studio-code
-brew cask install iterm2
 
 fancy_echo "Update heroku binary ..."
 brew unlink heroku
