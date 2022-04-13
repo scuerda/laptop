@@ -7,20 +7,17 @@ It can be run multiple times on the same machine safely.
 It installs, upgrades, or skips packages
 based on what is already installed on the machine.
 
+This is inspired by the Thoughtbot [Laptop](https://github.com/thoughtbot/laptop) 
+script, but with changes for my workflow.
+
 Requirements
 ------------
 
-We support:
+Supports: 
 
-* macOS Mavericks (10.9)
-* macOS Yosemite (10.10)
-* macOS El Capitan (10.11)
-* macOS Sierra (10.12)
-* macOS High Sierra (10.13)
-* macOS Mojave (10.14)
+* macOS Monterey (12.3) on Apple Silicon and Intel
 
 Older versions may work but aren't regularly tested.
-Bug reports for older versions are welcome.
 
 Install
 -------
@@ -81,6 +78,7 @@ Unix tools:
 * [Tmux] for saving project state and switching between projects
 * [Watchman] for watching for filesystem events
 * [Zsh] as your shell
+* [Neovim] as your text editor
 
 [Universal Ctags]: https://ctags.io/
 [Git]: https://git-scm.com/
@@ -90,19 +88,14 @@ Unix tools:
 [Tmux]: http://tmux.github.io/
 [Watchman]: https://facebook.github.io/watchman/
 [Zsh]: http://www.zsh.org/
+[Neovim]: https://github.com/neovim/neovim
 
-Heroku tools:
-
-* [Heroku CLI] and [Parity] for interacting with the Heroku API
-
-[Heroku CLI]: https://devcenter.heroku.com/articles/heroku-cli
-[Parity]: https://github.com/thoughtbot/parity
 
 GitHub tools:
 
-* [Hub] for interacting with the GitHub API
+* [gh] for interacting with the GitHub API
 
-[Hub]: http://hub.github.com/
+[gh]: https://cli.github.com/
 
 Image tools:
 
@@ -111,18 +104,20 @@ Image tools:
 Programming languages, package managers, and configuration:
 
 * [asdf-vm] for managing programming language versions
-* [Bundler] for managing Ruby libraries
 * [Node.js] and [npm], for running apps and installing JavaScript packages
 * [Python] stable for writing general-purpose code
+* [Erlang]
+* [Elixir] 
 * [Yarn] for managing JavaScript packages
 
-[Bundler]: http://bundler.io/
 [ImageMagick]: http://www.imagemagick.org/
 [Node.js]: http://nodejs.org/
 [npm]: https://www.npmjs.org/
 [asdf-vm]: https://github.com/asdf-vm/asdf
 [Python]: https://python.org/
 [Yarn]: https://yarnpkg.com/en/
+[Erlang]: https://www.erlang.org
+[Elixir]: https://elixir-lang.org
 
 Databases:
 
